@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox spacing="16.0" xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.gestionemployer.controller.EmployeListController">
+    <padding>
+        <Insets bottom="24.0" left="28.0" right="28.0" top="24.0"/>
+    </padding>
+
+    <Label styleClass="titre-page" text="Gestion des employes"/>
+
+    <HBox spacing="10.0" alignment="CENTER_LEFT">
+        <TextField fx:id="champRecherche" promptText="Rechercher un employe..." HBox.hgrow="ALWAYS"/>
+        <Button onAction="#onAjouterClick" styleClass="bouton-principal" text="Ajouter"/>
+        <Button onAction="#onModifierClick" styleClass="bouton-secondaire" text="Modifier"/>
+        <Button onAction="#onSupprimerClick" styleClass="bouton-danger" text="Supprimer"/>
+    </HBox>
+
+    <TableView fx:id="tableEmployes" VBox.vgrow="ALWAYS">
+        <columns>
+            <TableColumn fx:id="colId" text="ID" prefWidth="50.0"/>
+            <TableColumn fx:id="colNom" text="Nom" prefWidth="120.0"/>
+            <TableColumn fx:id="colPrenom" text="Prenom" prefWidth="120.0"/>
+            <TableColumn fx:id="colPoste" text="Poste" prefWidth="140.0"/>
+            <TableColumn fx:id="colDepartement" text="Departement" prefWidth="140.0"/>
+            <TableColumn fx:id="colSalaire" text="Salaire" prefWidth="110.0"/>
+            <TableColumn fx:id="colStatut" text="Statut" prefWidth="90.0"/>
+        </columns>
+    </TableView>
+</VBox>

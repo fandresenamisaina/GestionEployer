@@ -1,0 +1,132 @@
+.root {
+    -fx-font-family: "Segoe UI", Arial, sans-serif;
+    -fx-background-color: #f4f6f9;
+}
+
+.login-pane {
+    -fx-background-color: white;
+}
+
+.titre {
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1f2937;
+}
+
+.sous-titre {
+    -fx-font-size: 12px;
+    -fx-text-fill: #6b7280;
+}
+
+.titre-page {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1f2937;
+}
+
+.sous-titre-page {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #374151;
+}
+
+.erreur {
+    -fx-text-fill: #dc2626;
+    -fx-font-size: 12px;
+}
+
+.bouton-principal {
+    -fx-background-color: #2563eb;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 8 16 8 16;
+    -fx-background-radius: 6;
+}
+.bouton-principal:hover {
+    -fx-background-color: #1d4ed8;
+}
+
+.bouton-secondaire {
+    -fx-background-color: #e5e7eb;
+    -fx-text-fill: #1f2937;
+    -fx-padding: 8 16 8 16;
+    -fx-background-radius: 6;
+}
+.bouton-secondaire:hover {
+    -fx-background-color: #d1d5db;
+}
+
+.bouton-danger {
+    -fx-background-color: #dc2626;
+    -fx-text-fill: white;
+    -fx-padding: 8 16 8 16;
+    -fx-background-radius: 6;
+}
+.bouton-danger:hover {
+    -fx-background-color: #b91c1c;
+}
+
+.barre-laterale {
+    -fx-background-color: #111827;
+}
+
+.logo-sidebar {
+    -fx-text-fill: white;
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+}
+
+.bouton-menu {
+    -fx-background-color: transparent;
+    -fx-text-fill: #d1d5db;
+    -fx-alignment: CENTER_LEFT;
+    -fx-padding: 10 12 10 12;
+    -fx-background-radius: 6;
+    -fx-font-size: 13px;
+}
+.bouton-menu:hover {
+    -fx-background-color: #1f2937;
+    -fx-text-fill: white;
+}
+
+.bouton-deconnexion {
+    -fx-background-color: #374151;
+    -fx-text-fill: white;
+    -fx-padding: 8 12 8 12;
+    -fx-background-radius: 6;
+}
+.bouton-deconnexion:hover {
+    -fx-background-color: #4b5563;
+}
+
+.zone-contenu {
+    -fx-background-color: #f4f6f9;
+}
+
+.carte-stat {
+    -fx-background-color: white;
+    -fx-padding: 16;
+    -fx-background-radius: 10;
+    -fx-border-color: #e5e7eb;
+    -fx-border-radius: 10;
+    -fx-spacing: 6;
+}
+
+.carte-stat-titre {
+    -fx-text-fill: #6b7280;
+    -fx-font-size: 12px;
+}
+
+.carte-stat-valeur {
+    -fx-text-fill: #111827;
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+}
+
+.fond-formulaire {
+    -fx-background-color: white;
+}
+
+.table-view {
+    -fx-background-color: white;
+}

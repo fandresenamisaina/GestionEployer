@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox spacing="20.0" xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.gestionemployer.controller.DashboardHomeController">
+    <padding>
+        <Insets bottom="24.0" left="28.0" right="28.0" top="24.0"/>
+    </padding>
+
+    <Label styleClass="titre-page" text="Tableau de bord"/>
+
+    <HBox spacing="16.0">
+        <VBox styleClass="carte-stat" HBox.hgrow="ALWAYS">
+            <Label styleClass="carte-stat-titre" text="Employes"/>
+            <Label fx:id="labelTotalEmployes" styleClass="carte-stat-valeur" text="0"/>
+        </VBox>
+        <VBox styleClass="carte-stat" HBox.hgrow="ALWAYS">
+            <Label styleClass="carte-stat-titre" text="Employes actifs"/>
+            <Label fx:id="labelEmployesActifs" styleClass="carte-stat-valeur" text="0"/>
+        </VBox>
+        <VBox styleClass="carte-stat" HBox.hgrow="ALWAYS">
+            <Label styleClass="carte-stat-titre" text="Masse salariale / mois"/>
+            <Label fx:id="labelMasseSalariale" styleClass="carte-stat-valeur" text="0"/>
+        </VBox>
+    </HBox>
+
+    <HBox spacing="16.0">
+        <VBox styleClass="carte-stat" HBox.hgrow="ALWAYS">
+            <Label styleClass="carte-stat-titre" text="Solde du compte entreprise"/>
+            <Label fx:id="labelSolde" styleClass="carte-stat-valeur" text="0"/>
+        </VBox>
+        <VBox styleClass="carte-stat" HBox.hgrow="ALWAYS">
+            <Label styleClass="carte-stat-titre" text="Paiements en attente ce mois"/>
+            <Label fx:id="labelPaiementsEnAttente" styleClass="carte-stat-valeur" text="0"/>
+        </VBox>
+    </HBox>
+
+    <Label styleClass="sous-titre-page" text="Derniers paiements"/>
+    <ListView fx:id="listeDerniersPaiements" VBox.vgrow="ALWAYS"/>
+</VBox>
